@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mes liens</title>
+  <meta name="description" content="Tous mes liens au même endroit." />
+  <!-- Open Graph pour l’aperçu quand tu partages -->
+  <meta property="og:title" content="Mes liens" />
+  <meta property="og:description" content="Tous mes liens au même endroit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" /> <!-- optionnel: mets une image hébergée -->
+  <style>
+    :root{
+      --bg:#0b0b10; --fg:#eaeaf0; --muted:#a5a8b3; --card:#14141d; --btn:#2f2f45; --btnHover:#3b3b58; --accent:#7c5cff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1b1b2b 0%, #0b0b10 60%), var(--bg);
+      color:var(--fg); display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .card{
+      width:100%; max-width:460px; background:var(--card); border:1px solid #222236;
+      border-radius:24px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .avatar{
+      width:96px; height:96px; border-radius:50%; background:#26263a; display:flex; align-items:center; justify-content:center;
+      font-size:40px; font-weight:700; margin:0 auto 12px; user-select:none;
+    }
+    h1{font-size:24px; margin:8px 0 6px; text-align:center}
+    .bio{color:var(--muted); text-align:center; font-size:14px; margin:0 0 16px}
+    .links{display:flex; flex-direction:column; gap:12px; margin-top:14px}
+    .btn{
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 16px; border-radius:16px; background:var(--btn); color:var(--fg); text-decoration:none;
+      border:1px solid #363656; font-weight:600; transition:.15s transform,.2s background,.2s box-shadow;
+      text-align:center;
+    }
+    .btn:hover{ background:var(--btnHover); transform:translateY(-1px); box-shadow:0 6px 18px rgba(0,0,0,.25)}
+    .footer{ margin-top:18px; text-align:center; color:var(--muted); font-size:12px}
+    .tag{display:inline-block; font-size:11px; color:#cfcff5; background:#272746; border:1px solid #3c3c66; padding:4px 8px; border-radius:999px}
+    .accent{ color:var(--accent)}
+    @media (prefers-color-scheme: light){ :root{ --bg:#f6f6fb; --fg:#0f0f16; --muted:#5f6370; --card:#ffffff; --btn:#f1f1fb; --btnHover:#eaeaf7; --accent:#5b46f5 } body{background:#f3f4fb}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <!-- Avatar : mets une lettre ou remplace par <img src="ton-image.jpg" alt="avatar" class="avatar"> -->
+    <div class="avatar" aria-hidden="true">G</div>
+
+    <h1>@gab</h1>
+    <p class="bio">Tous mes réseaux au même endroit ✨</p>
+
+    <div class="links" role="navigation" aria-label="Liens principaux">
+      <!-- Remplace les href="#" par tes vrais liens -->
+      <a class="btn" href="https://instagram.com/toncompte" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <!-- petite icône SVG intégrée (optionnel) -->
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm12 1.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 19 5.75M12 7a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3"/></svg>
+        Instagram
+      </a>
+
+      <a class="btn" href="https://www.tiktok.com/@gabrielabbassov" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.5 3h3.2a6.4 6.4 0 0 0 6.3 6.2v3.2a9.5 9.5 0 0 1-6.3-2.3v6.4a6.5 6.5 0 1 1-6.5-6.5a6.2 6.2 0 0 1 1.8.3v3.3a3.3 3.3 0 1 0 2.4 3.2z"/></svg>
+        TikTok
+      </a>
+
+      <a class="btn" href="https://www.youtube.com/@SMPOfficiel" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.5v9a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3M10 9v6l5-3z"/></svg>
+        YouTube
+      </a>
+
+      <a class="btn" href="https://twitter.com/toncompte" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m3 3l7.1 9.1L3.3 21h3.1l5.1-6.3L15.9 21H21l-7.1-9.5L20.6 3h-3.1l-4.7 5.8L8.5 3z"/></svg>
+        X / Twitter
+      </a>
+
+      <a class="btn" href="smp.officiel.song@gmail.com" aria-label="Email">✉️  Me contacter</a>
+    </div>
+
+    <p class="footer">
+      <span class="tag">Lien unique</span>
+      &nbsp;•&nbsp; Personnalisé avec <span class="accent">HTML</span>
+    </p>
+  </main>
+</body>
+</html>
